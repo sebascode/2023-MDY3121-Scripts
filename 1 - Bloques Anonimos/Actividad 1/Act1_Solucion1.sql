@@ -1,5 +1,5 @@
 /*
-EJERCICIO N° 1
+EJERCICIO NÂ° 1
 */
 ALTER SESSION SET NLS_TERRITORY = 'Chile';
 
@@ -11,7 +11,7 @@ EXEC :V_PORC := 40;
 EXEC :V_RUTMARCO := '11846972';
 EXEC :V_RUTMARIA := '18560875';
 
--- declaramos variables de nuestro bloque anónimo
+-- declaramos variables de nuestro bloque anÃ³nimo
 DECLARE
     v_nombre VARCHAR(200);
     v_run VARCHAR(10);
@@ -21,7 +21,7 @@ BEGIN
     -- primer select para Marco Ogaz Varas.
     SELECT 
         NUMRUT_EMP || '-' || DVRUT_EMP AS "RUT"
-        , NOMBRE_EMP || ' ' || APMATERNO_EMP || ' ' || APPATERNO_EMP AS "NOMBRE"
+        , NOMBRE_EMP || ' ' || APPATERNO_EMP || ' ' || APMATERNO_EMP AS "NOMBRE"
         , SUELDO_EMP AS "SUELDO"
     INTO v_run, v_nombre, v_sueldo
     FROM EMPLEADO
@@ -29,16 +29,16 @@ BEGIN
         NUMRUT_EMP = :V_RUTMARCO;
     
     -- ESCRIBIENDO SALIDA
-    dbms_output.put_line('DATOS CALCULO BONIFICACIÓN EXTRA DEL '||:V_PORC||'% DEL SUELDO');
+    dbms_output.put_line('DATOS CALCULO BONIFICACIÃ“N EXTRA DEL '||:V_PORC||'% DEL SUELDO');
     dbms_output.put_line('NOMBRE: '||v_nombre);
     dbms_output.put_line('RUN: '||v_run);
     dbms_output.put_line('SUELDO:'||TO_CHAR(v_sueldo,'fmL999G999'));
-    dbms_output.put_line('Bonificación extra:'||TO_CHAR(v_sueldo*:V_PORC/100, 'fmL999G999'));
+    dbms_output.put_line('BonificaciÃ³n extra:'||TO_CHAR(v_sueldo*:V_PORC/100, 'fmL999G999'));
     dbms_output.new_line();
     -- segundo select para MARIA BARRERA ONETO.
     SELECT 
         NUMRUT_EMP || '-' || DVRUT_EMP AS "RUT"
-        , NOMBRE_EMP || ' ' || APMATERNO_EMP || ' ' || APPATERNO_EMP AS "NOMBRE"
+        , NOMBRE_EMP || ' ' || APPATERNO_EMP || ' ' || APMATERNO_EMP AS "NOMBRE"
         , SUELDO_EMP AS "SUELDO"
     INTO
         v_run, v_nombre, v_sueldo
@@ -47,11 +47,11 @@ BEGIN
         NUMRUT_EMP = :V_RUTMARIA;
     
     -- ESCRIBIENDO SALIDA
-    dbms_output.put_line('DATOS CALCULO BONIFICACIÓN EXTRA DEL '||:V_PORC||'% DEL SUELDO');
+    dbms_output.put_line('DATOS CALCULO BONIFICACIÃ“N EXTRA DEL '||:V_PORC||'% DEL SUELDO');
     dbms_output.put_line('NOMBRE: '||v_nombre);
     dbms_output.put_line('RUN: '||v_run);
     dbms_output.put_line('SUELDO:'||TO_CHAR(v_sueldo,'fmL999G999'));
-    dbms_output.put_line('Bonificación extra:'||TO_CHAR(v_sueldo*:V_PORC/100, 'fmL999G999'));
+    dbms_output.put_line('BonificaciÃ³n extra:'||TO_CHAR(v_sueldo*:V_PORC/100, 'fmL999G999'));
     
     /*
     Se aplica regla de 3 para obtener porcentaje: el 100% del sueldo es v_sueldo, si necesitamos el 40% se obtiene:
