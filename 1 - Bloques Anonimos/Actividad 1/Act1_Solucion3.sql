@@ -1,7 +1,7 @@
 /*
-    EJERCICIO N° 3
-    Simulación 1: El salario se aumentará para todos los empleados en un 8,5%.
-    Simulación 2: El salario de aumentará en un 20 para los empleados con sueldo mayor o igual
+    EJERCICIO NÂ° 3
+    SimulaciÃ³n 1: El salario se aumentarÃ¡ para todos los empleados en un 8,5%.
+    SimulaciÃ³n 2: El salario de aumentarÃ¡ en un 20 para los empleados con sueldo mayor o igual
         a $200.000 y menor o igual a $400.000.
 */
 ALTER SESSION SET NLS_TERRITORY = 'Chile';
@@ -43,15 +43,15 @@ BEGIN
     dbms_output.put_line('-----------------');
     dbms_output.put_line('NOMBRE DEL EMPLEADO: '||v_nombre);
     dbms_output.put_line('RUN: '||v_rut);
-    dbms_output.put_line('SIMULACIÓN 1: Aumentar en '||:PORC_1||'% el salario de todos los empleados');
+    dbms_output.put_line('SIMULACIÃ“N 1: Aumentar en '||:PORC_1||'% el salario de todos los empleados');
     dbms_output.put_line('Sueldo Actual: '|| TO_CHAR(v_sueldo,'fmL999G999G999'));
     dbms_output.put_line('Sueldo Reajustado: '|| TO_CHAR(v_ajuste_1 + v_sueldo,'fmL999G999G999'));
     dbms_output.put_line('Reajuste: '|| TO_CHAR(v_ajuste_1,'fmL999G999G999'));
     
-    -- SIMULACIÓN 2
+    -- SIMULACIÃ“N 2
     dbms_output.new_line();
-    dbms_output.put_line('SIMULACIÓN 2: Aumentar en '||:PORC_2||'% el salario de todos los empleados
-        entre '||TO_CHAR(:RANGO_MIN_2,'fmL999G999G999') ||' y '|| TO_CHAR(:RANGO_MAX_2,'fmL999G999'));
+    dbms_output.put_line('SIMULACIÃ“N 2: Aumentar en '||:PORC_2||'% el salario de todos los empleados
+        entre '||TO_CHAR(:RANGO_MIN,'fmL999G999G999') ||' y '|| TO_CHAR(:RANGO_MAX,'fmL999G999'));
     dbms_output.put_line('Sueldo Actual: '|| TO_CHAR(v_sueldo,'fmL999G999')||'.');
     IF :RANGO_MIN < v_sueldo AND :RANGO_MAX > v_sueldo THEN
         v_ajuste_2 := v_sueldo * (:PORC_2 / 100);
