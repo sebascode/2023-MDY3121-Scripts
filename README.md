@@ -66,6 +66,9 @@ CATEGORÍA A:
 (...)
 ```
 
+----
+> Desde este punto se requiere conocimiento en `records` y `varray`
+
 6. De una lista de Vendedores, Clientes y Empleado, Seleccionar su Nombre Completo,
 Rut, Nombre Equipo, Nombre Categoría, Sueldo, ID y Tipo (vendedor, empleado o cliente)
 Dejando en Blanco o en 0 (según corresponda) los datos que no posea y listar
