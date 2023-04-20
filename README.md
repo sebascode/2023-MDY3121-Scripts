@@ -33,7 +33,7 @@ OUTPUT:
 10x10 = 100
 ```
 
-4. Desarrollar un bloque anónimo que usando cursor explícito de lista de vendedores 
+4. `Cursor` Desarrollar un bloque anónimo que usando cursor explícito de lista de vendedores 
 (id, nombres, apellidos, fecha nacimiento y sueldo) muestre quien tiene un sueldo menor o
 igual $ 354,000.
 Mostrar el resultado por cada registro.
@@ -50,7 +50,7 @@ INFORME DE EMPLEADOS
 (...)
 ```
 
-5.  Elaborar un bloque anónimo PL/SQL que devuelva un reporte de los vendedores
+5. Elaborar un bloque anónimo PL/SQL que devuelva un reporte de los vendedores
 que tienen un salario menor e igual a $ 400,000. El reporte debe mostrarse
 agrupado por Categoría. Los valores de la columna deben ser por ancho fijo.
 
@@ -66,10 +66,7 @@ CATEGORÍA A:
 (...)
 ```
 
-----
-> Desde este punto se requiere conocimiento en `records` y `varray`
-
-6. De una lista de Vendedores, Clientes y Empleado, Seleccionar su Nombre Completo,
+6. `Records` De una lista de Vendedores, Clientes y Empleado, Seleccionar su Nombre Completo,
 Rut, Nombre Equipo, Nombre Categoría, Sueldo, ID y Tipo (vendedor, empleado o cliente)
 Dejando en Blanco o en 0 (según corresponda) los datos que no posea y listar
 unificadamente.
@@ -94,7 +91,7 @@ Vendedor    60	ROLANDO GUERRA          121111114               Categoria B     $
 Vendedor    65	HERNALDO CACERES        131111115               Categoria B     $364,832
 ```
 
-7. Desarrollar un bloque anónimo que nos permita:
+7. `VARRAY` Desarrollar un bloque anónimo que nos permita:
 - Identificar y almacenar una persona en un VARRAY (del ejercicio anterior)
 - Buscar su incidencia en cada sección de la base de datos
 - Listar movimientos de cada uno en formato "LOG" ordenado por fecha donde
