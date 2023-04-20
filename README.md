@@ -1,7 +1,7 @@
 # 2023-MDY3121-Scripts Ejercicios Unidad 2
 
 Scripts ejecutados en clases para el ramo de Programación en Base de Datos (MDY3121) DUOC UC - San Joaquín.
-Se debe Utilizar la Base de datos recomendada en este repositorio [link](https://github.com/sebascode/2023-MDY3121-Scripts/blob/main/2%20-%20Bloques%20Complejos/2.0%20DDL)
+Se debe Utilizar la Base de datos recomendada en este repositorio [link](https://github.com/sebascode/2023-MDY3121-Scripts/blob/main/2%20-%20Bloques%20Complejos/2.0%20DDL.sql)
 
 ## Ejercicios a realizar
 
