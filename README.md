@@ -17,7 +17,7 @@ Según estos datos le indican que el sistema debe tener las siguientes caracter�
 - Al desvincular un `empleado` éste debe pasar automáticamente a una tabla que lo represente (creada por usted) agregándole un `comentario`.
 - Se puede recontratar un empleado, así que cada vez que se agrege un empleado éste debe ser verificado si ya estuvo previamente trabajando.
 
-Según el DDL de la unidad [(DDL)](/3.0-DDL.sql), realizar la siguiente solicitud:
+Según el DDL de la unidad [(DDL)](/3 - Bloques Persistentes/3.0 DDL.sql), realizar la siguiente solicitud:
 
 - [ ]  1. Crear un paquete de elementos que permita Generar las funciones de Empleados.
 - [ ]  2. Crear un paquete de elementos que permita Generar las funciones de Departamentos.
